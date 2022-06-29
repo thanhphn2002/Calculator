@@ -43,7 +43,7 @@ namespace _2051012108
                 var temp = checked(dt.Compute(bieuThuc, ""));
                 res = String.Format("{0:0.###}", temp);
             
-                if (res.Equals("∞"))
+                if (res.Equals("∞") || res.Equals("-∞"))
                     throw new DivideByZeroException("MATH ERROR");
             }
             catch (System.Data.SyntaxErrorException)
