@@ -28,3 +28,14 @@ D:\Nhat Thanh\Open University\Nam 2\HK3\LTGD\2051012108_PhamHoangNhatThanh\20510
 D:\Nhat Thanh\Open University\Nam 2\HK3\LTGD\2051012108_PhamHoangNhatThanh\2051012108\obj\Debug\calculator.Properties.Resources.resources
 D:\Nhat Thanh\Open University\Nam 2\HK3\LTGD\2051012108_PhamHoangNhatThanh\2051012108\obj\Debug\calculator.exe
 D:\Nhat Thanh\Open University\Nam 2\HK3\LTGD\2051012108_PhamHoangNhatThanh\2051012108\obj\Debug\calculator.pdb
+C:\Users\User\Desktop\Calculator\2051012108\bin\Debug\calculator.exe.config
+C:\Users\User\Desktop\Calculator\2051012108\bin\Debug\calculator.exe
+C:\Users\User\Desktop\Calculator\2051012108\bin\Debug\calculator.pdb
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\2051012108.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\2051012108.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\_2051012108.Form3.resources
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\2051012108.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\2051012108.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\calculator.exe
+C:\Users\User\Desktop\Calculator\2051012108\obj\Debug\calculator.pdb

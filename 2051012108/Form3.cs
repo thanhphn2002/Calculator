@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _2051012108
@@ -28,6 +30,12 @@ namespace _2051012108
             {
                 bieuThuc = lbRes.Text;
                 lbRes.Text = calculate();
+
+                if (lbRes.Text.Equals("MATH ERROR") || lbRes.Text.Equals("OVER FLOW"))
+                {
+                    delay(1000);
+                    lbRes.Text = "";
+                }
             } 
             else
                 lbRes.Text += userClick;
@@ -42,8 +50,8 @@ namespace _2051012108
             {
                 var temp = checked(dt.Compute(bieuThuc, ""));
                 res = String.Format("{0:0.###}", temp);
-            
-                if (res.Equals("∞") || res.Equals("-∞"))
+
+                if (res.Equals("∞") || res.Equals("-∞") || res.Equals("NaN"))
                     throw new DivideByZeroException("MATH ERROR");
             }
             catch (System.Data.SyntaxErrorException)
@@ -64,6 +72,15 @@ namespace _2051012108
             }
             
             return res;
+        }
+
+        private void delay(int timeDelay)
+        {
+            // Using Thread Sleep
+            Thread.Sleep(timeDelay);
+
+            // Using Task Delay
+            Task.Delay(timeDelay).Wait();
         }
     }
 }

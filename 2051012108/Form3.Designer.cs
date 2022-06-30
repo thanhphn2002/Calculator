@@ -48,6 +48,8 @@
             this.btAdd = new System.Windows.Forms.Button();
             this.btEqual = new System.Windows.Forms.Button();
             this.btDot = new System.Windows.Forms.Button();
+            this.btBrackets = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbRes
@@ -70,9 +72,9 @@
             this.btAc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAc.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAc.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btAc.Location = new System.Drawing.Point(227, 117);
+            this.btAc.Location = new System.Drawing.Point(324, 117);
             this.btAc.Name = "btAc";
-            this.btAc.Size = new System.Drawing.Size(149, 47);
+            this.btAc.Size = new System.Drawing.Size(52, 47);
             this.btAc.TabIndex = 1;
             this.btAc.Text = "Ac";
             this.btAc.UseVisualStyleBackColor = false;
@@ -88,7 +90,7 @@
             this.btDel.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btDel.Location = new System.Drawing.Point(33, 117);
             this.btDel.Name = "btDel";
-            this.btDel.Size = new System.Drawing.Size(149, 47);
+            this.btDel.Size = new System.Drawing.Size(62, 47);
             this.btDel.TabIndex = 1;
             this.btDel.Text = "Del";
             this.btDel.UseVisualStyleBackColor = false;
@@ -336,6 +338,36 @@
             this.btDot.UseVisualStyleBackColor = false;
             this.btDot.Click += new System.EventHandler(this.bt0_Click);
             // 
+            // btBrackets
+            // 
+            this.btBrackets.BackColor = System.Drawing.Color.White;
+            this.btBrackets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBrackets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btBrackets.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBrackets.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btBrackets.Location = new System.Drawing.Point(227, 117);
+            this.btBrackets.Name = "btBrackets";
+            this.btBrackets.Size = new System.Drawing.Size(52, 47);
+            this.btBrackets.TabIndex = 1;
+            this.btBrackets.Text = ")";
+            this.btBrackets.UseVisualStyleBackColor = false;
+            this.btBrackets.Click += new System.EventHandler(this.bt0_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Location = new System.Drawing.Point(130, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 47);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "(";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.bt0_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -357,12 +389,14 @@
             this.Controls.Add(this.btDiv);
             this.Controls.Add(this.btMul);
             this.Controls.Add(this.bt6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btBrackets);
             this.Controls.Add(this.bt9);
             this.Controls.Add(this.btDel);
             this.Controls.Add(this.btAc);
             this.Controls.Add(this.lbRes);
             this.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Turquoise;
+            this.ForeColor = System.Drawing.Color.Cyan;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -395,5 +429,7 @@
         private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Button btEqual;
         private System.Windows.Forms.Button btDot;
+        private System.Windows.Forms.Button btBrackets;
+        private System.Windows.Forms.Button button1;
     }
 }
