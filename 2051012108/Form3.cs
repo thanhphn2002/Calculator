@@ -10,6 +10,7 @@ namespace _2051012108
     public partial class Form3 : Form
     {
         String bieuThuc, res;
+        bool equalClick = false;
 
         public Form3()
         {
@@ -19,6 +20,7 @@ namespace _2051012108
         private void bt0_Click(object sender, EventArgs e)
         {
             object userClick = (sender as Button).Text;
+
             if (userClick.Equals("Ac"))
                 lbRes.Text = "";
             else if (userClick.Equals("Del"))
@@ -33,12 +35,22 @@ namespace _2051012108
 
                 if (lbRes.Text.Equals("MATH ERROR") || lbRes.Text.Equals("OVER FLOW"))
                 {
-                    delay(1000);
+                    delay(700);
                     lbRes.Text = "";
                 }
-            } 
+                else
+                    equalClick = true;
+            }
             else
+            {
+                if (equalClick)
+                {
+                    lbRes.Text = "";
+                    equalClick = false;
+                }
+
                 lbRes.Text += userClick;
+            }
         }
 
         private String calculate()
@@ -70,8 +82,14 @@ namespace _2051012108
             {
                 res = "OVER FLOW";
             }
-            
+
             return res;
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Stop) == DialogResult.No)
+                e.Cancel = true;
         }
 
         private void delay(int timeDelay)
